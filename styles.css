@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather+Sans:800|Merriweather:300");
+
+:root {
+  --font-size: 2rem;
+  --font: Arial, Helvetica, sans-serif;
+  --ff-ss: "Merriweather Sans", sans-serif;
+  --ff-s: "Merriweather", serif;
+  --main-bg-color: lightblue;
+  --clr-primary: lightblue;
+  --clr-light: #f4f4f4;
+  --clr-dark: #333;
+  --clr-warning: rgb(99, 36, 36);
+  --box-shadow-blur: 5px;
+  --box-shadow-color: grey;
+  --box-shadow-h-offset: 2px;
+  --box-shadow-v-offset: 2px;
+  --box-padding: 1rem;
+  --grid-gap: 1rem;
+}
+
+*,
+*::before,
+*::after {
+  font-family: inherit;
+  box-sizing: border-box;
+}
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  padding-top: 40px;
+  padding: 1em;
+  margin: 0;
+  background-color: var(--clr-primary);
+  color: rgb(99, 36, 36);
+}
+
+.shadow {
+  box-shadow: var(--box-shadow-h-offset) var(--box-shadow-v-offset)
+    var(--box-shadow-blur) var(--box-shadow-color);
+}
+
+img {
+  max-width: 100%;
+  width: auto;
+}
+.portfolio-title {
+  text-align: center;
+  grid-column: 1/-1;
+  text-transform: uppercase;
+}
+.portfolio {
+  padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1em;
+}
+
+.portfolio-item {
+  padding: 1em;
+  min-height: 200px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.portfolio-1 {
+  padding: 1em;
+  display: grid;
+  background-color: lightcyan;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 1em;
+}
